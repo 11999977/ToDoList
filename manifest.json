@@ -1,0 +1,23 @@
+{
+  "short_name" : "ToDo",
+  "name" : "ToDo Shikamaru",
+  "icons": [
+    {
+      "src": "/Img/Logo-Todo.png",
+      "sizes": "250x250",
+      "type": "image/png"
+
+    },
+
+    {
+      "src": "/Img/Logo.png",
+      "sizes": "140x140",
+      "type": "image/png"
+
+    }
+
+  ],
+
+  "start_url": "/?source=pwa",
+  "display": "standalone"
+}

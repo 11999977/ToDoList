@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./js/script.js" defer></script>
+  <link rel="shortcut icon" href="./Img/Logo-Todo.png" type="image/x-icon">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <h1 class="titre">TO DO LIST</h1>
+      <div class="input">
+        <input type="text" placeholder="Ajoutez une tâche..." id="zone">
+        <button id="addTo">Ajouter +</button>
+      </div>
+      <ol class="ToDo">
+        
+      </ol>
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('load',() => {
+      if ("serviceWorker in navigator") {
+        navigator.serviceWorker.register('/service-worker.js')
+      // .then(function(){
+      //   console.log("service Worker enregistré !")
+      // })
+      }
+    })
+    
+  </script>
+  
+</body>
+</html>

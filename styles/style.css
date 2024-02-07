@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../Img/black-antique-countdown-vintage-down.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border: 2px solid #5b00d6;
+  width: 700px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.container h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 10px;
+}
+input{
+  width: 80%;
+  height: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #5b00d6;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 15px;
+  outline: none;
+  display: block;
+  padding-left: 5px;
+  
+}
+
+#addTo{
+  min-width: 40px;
+  height: 35px;
+  border: none;
+  background-color: #5b00d6;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+
+}
+
+.ToDo{
+  max-height: 400px;
+  max-width: 620px;
+  margin-top: 5px;
+  border: 1px solid #5d00d68d;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 25px;
+  overflow-y: auto;
+}
+
+.scroll{
+  overflow-y:scroll;
+}
+
+.tache_style{
+  background: #8aa64b;
+  padding: 8px;
+  max-height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #000042;
+  display: block;
+
+}
+
+p{
+  font-size: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 490px){
+  .full_input{
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input{
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .container{
+    font-size: 13px;
+    width: 100%;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+  }
+}
